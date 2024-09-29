@@ -1,0 +1,112 @@
+/* Basic reset for consistent look across browsers */
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #14014a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.container {
+    width: 80%;  /* Responsive width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+h2 {
+    text-align: left;  /* Align text to the left */
+    margin-bottom: 20px;
+    padding-right: 10%;
+    font-size: calc(1rem + 1vw); /* Responsive text size */
+    color: #12d198;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    h2 {
+        font-size: calc(0.8rem + 1vw); /* Smaller font size for very small screens */
+    }
+}
+
+/* Form container styling */
+form {
+    background-color: rgb(57, 156, 237);
+    padding: 20px;
+    padding-top: 10%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+/*
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    text-size-adjust: 0.545;
+    color: #d1a512;
+}
+    */
+
+/* Input labels styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Input fields styling */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Result page styling */
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #4cae4c;
+}
